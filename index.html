@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Kabra</title>
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    <div class="home">
+
+        <span class="home__container">
+
+            <h1>
+                Hi, my name is 
+                <span class="text">
+                    Parth Kabra
+                </span>
+            </h1>
+            <h3>
+                I'm a <span class="ityped"></span>
+            </h3>
+            <br>
+            <script>
+                window.ityped.init(document.querySelector('.ityped'),{
+                    strings: [
+                        "Student.",
+                        "Freelance Web Developer.",
+                        "Competitive Programmer.",
+                        "Android Developer."
+                    ],
+                    loop: true
+                })
+            </script>
+            <span>
+                <a class="button" href="#about">Read More</a>
+            </span>
+        </span>
+    </div>
+
+    <div class="about" id = "about">
+
+        <h1 class="section__title">ABOUT ME</h1>
+
+    </div>
+
+</body>
+</html>
