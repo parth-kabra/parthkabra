@@ -35,6 +35,26 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 13px;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d6d6d6; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(180, 180, 180);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(191, 190, 190); 
+  }
+
 .button{
     font-family: "Poppins", sans-serif;
     border: 1px;
@@ -127,7 +147,7 @@ a{
     box-shadow: 2px 2px 27px 4px rgba(59,144,201,0.75);
     -webkit-box-shadow: 2px 2px 27px 4px rgba(59,144,201,0.75);
     -moz-box-shadow: 2px 2px 27px 4px rgba(59,144,201,0.75);
-    max-width: 650px;
+    max-width: 50%;
     height: auto;
 }
 
@@ -228,4 +248,8 @@ a{
 
 .contact h1{
     color: whitesmoke;
+}
+
+.section__buttons{
+    display: flex;
 }
