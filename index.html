@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <div class="home" id = "home">
+    <section class="home" id = "home">
 
         <span class="home__container">
 
@@ -25,16 +25,16 @@
                 </span>
             </h1>
             <h3>
-                I'm a <span class="ityped"></span>
+                I'm <span class="ityped"></span>
             </h3>
             <br>
             <script>
                 window.ityped.init(document.querySelector('.ityped'),{
                     strings: [
-                        "Student.",
-                        "Freelance Web Developer.",
-                        "Competitive Programmer.",
-                        "Android Developer."
+                        "a Student.",
+                        "a Freelance Web Developer.",
+                        "a Competitive Programmer.",
+                        "an Android Developer."
                     ],
                     loop: true
                 })
@@ -43,13 +43,25 @@
                 <a class="button" href="#about">Read More</a>
             </span>
         </span>
-    </div>
+    </section>
 
-    <div class="about" id = "about">
+    <section class="about" id = "about">
 
-        <h1 class="section__title">ABOUT ME</h1>
+        <h1 class="section__title" style="margin-top: 2rem;">ABOUT ME</h1>
+        <article class="project">
 
-    </div>
+            <img src = "pfp.jpg"  class="about__img"/>
+
+            <span class="about__info">
+
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus error voluptate repellendus magni atque natus temporibus amet adipisci iure quaerat tempora consequatur officia voluptates ullam, aliquam minus libero eligendi nemo. <br> <br> ipsum dolor sit, amet consectetur adipisicing elit. Perferendis impedit nam quaerat? Quasi optio eveniet distinctio culpa reprehenderit et minima deleniti omnis adipisci obcaecati quod nesciunt, dignissimos possimus nostrum hic.</p>
+
+            </span>
+
+        </article>
+
+    </section>
 
     <br>
 
@@ -124,6 +136,12 @@
 
     </section>
 
+    <section class="contact">
+
+        <h1 class="section__title">CONTACT</h1>
+
+    </section>
+
     <section class="footer">
             
         <a href="#home"><i class='bx bx-chevron-up' ></i></a>
@@ -141,7 +159,6 @@
         <p class="credit">Made with <i class='bx bxs-heart'></i> by Parth Kabra</p>
     
     </section>
-    
     
 
 </body>
