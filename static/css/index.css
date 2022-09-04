@@ -389,6 +389,11 @@ img{
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(116,253,210,0.75);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(116,253,210,0.75);
 	border-radius: 0.6em;
+	transition: 0.3s;
+}
+
+.project__img:hover{
+	transform: translate(0, -10px);
 }
 
 @media screen and (max-width:768px){
