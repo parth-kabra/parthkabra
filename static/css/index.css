@@ -328,9 +328,10 @@ img{
 	font-size: medium;
 }
 
-@media screen and (max-width:522px) {
+@media screen and (max-width:667px) {
 	.social{
 		width: 100%;
+		word-spacing: 3vw;
 	}
 }
 
