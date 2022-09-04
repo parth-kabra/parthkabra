@@ -5,7 +5,3 @@ function scrolltop(){
         behavior: 'smooth'
     });
 }
-
-document.addEventListener('visibilitychange', function (event) {
-    document.title = ((document.hidden) ? "Don't leave, please come back 🥺" : "Parth Kabra")
-});
