@@ -540,3 +540,50 @@ img{
 		flex-direction:column;
 	}
 }
+
+
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	backdrop-filter: blur(4px);
+	right: 0;
+	background-color: #141218f7;
+	border-left:1px solid #80808014;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #d7d7d7;
+	display: block;
+	transition: 0.3s;
+}
+.sidebar{
+	color: white;
+}
+.sidebar a:hover {
+  	color: #fcfcfc;
+}
+
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.nav__text{
+	border-bottom: 1px solid #80808014;
+	padding-bottom: 3rem !important;
+	padding-left: 1vw;
+	display: flex;
+	align-items: center;
+}
