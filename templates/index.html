@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parth Kabra</title>
-    <link rel="stylesheet" href="static/css/index.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <script src="static/js/index.js"></script>
-    <link rel="icon" href="static/img/logo.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="{{ url_for('static', filename='css/boxicons.min.css') }}" rel='stylesheet'>
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
 </head>
 <body >
     <div id="mySidebar" class="sidebar" >
@@ -23,21 +22,24 @@
         </span>
     </div>
 
+
     <section class="home">
 
-        <img src="static/img/image.png" class="home__img">
-        
-        <span class="info">
-            <span>
-                <p class="home__title">Hi there!</p>
-                <p class="home__text">As someone who enjoys designing compelling products, I strive to continually improve and excel at my job.</p>
+        <span data-aos="zoom-in" class="home" style="padding-top:0">
+            <img src="{{ url_for('static', filename='img/image.jpg') }}" class="home__img">
+            
+            <span class="info">
+                <span>
+                    <p class="home__title">Hi there!</p>
+                    <p class="home__text">As someone who enjoys designing compelling products, I strive to continually improve and excel at my job.</p>
+                </span>
             </span>
         </span>
 
     </section>
 
 
-    <section class="about" id = "about">
+    <section data-aos="fade-up" data-aos-duration="800" class="about" id = "about">
         
         <span class="about__info">
 
@@ -82,7 +84,7 @@
 
         <span class="project">
 
-            <span>
+            <span data-aos="fade-up" data-aos-duration="800">
                 <p class="project__name"><b>Wardrobe - Ecommerce Website</b></p>
                 <br>
                 <p class="project__info">With Google authentication, Firebase Realtime Database, Custom Cart, and Payment Gateway, Wardrobe is an e-commerce online store made with <b class="text">Vanilla.js</b> and <b class="text">Firebase.</b></p>
@@ -103,7 +105,7 @@
                 <br>
 
                 <a href="https://parth-kabra.github.io/Wardrobe/" target="_blank">
-                    <img src="static/img/wardrobe.png" class="project__img">
+                    <img src="{{ url_for('static', filename='img/wardrobe.png') }}" class="project__img">
                 </a>
 
             </span>
@@ -112,7 +114,7 @@
 
         <span class="project">
 
-            <span>
+            <span data-aos="fade-up" data-aos-duration="800">
                 <p class="project__name"><b>Interstellar Chat - Web Chatting App</b></p>
                 <br>
                 <p class="project__info">A web application based on <b class="text">Flask</b>, <b class="text">Socket.io</b>, <b class="text">SQL</b>, and <b class="text">Javascript</b>, Interstellar Chat lets you chat with stars.</p>
@@ -133,7 +135,7 @@
                 <br>
 
                 <a href="https://interstellar-chat.parthkabra3.repl.co/" target="_blank">
-                    <img src="static/img/Interstellar-Chat.png" class="project__img">
+                    <img src="{{ url_for('static', filename='img/Interstellar-Chat.png') }}" class="project__img">
                 </a>
 
             </span>
@@ -142,37 +144,7 @@
 
         <span class="project">
 
-            <span>
-                <p class="project__name"><b>Silver Stone - Canvas2d Game</b></p>
-                <br>
-                <p class="project__info">Silver Stone is an online 2D Game made using <b class="text">Vanilla.js</b> and <b class="text">Tailwind.css</b> with Game Score, Main Menu, and Game Over Menu.</b></p>
-                <br>
-
-                <span class="links">
-                    
-                    <a href="https://parth-kabra.github.io/Canvas2d-Game/" target="_blank">
-                        <i class='bx bx-link-external'></i>
-                    </a>
-
-                    <a href="https://github.com/parth-kabra/Canvas2d-Game" target="_blank">
-                        <i class='bx bx-code-alt'></i>
-                    </a>
-
-                </span>
-
-                <br>
-
-                <a href="https://parth-kabra.github.io/Canvas2d-Game/" target="_blank">
-                    <img src="static/img/silver stone.png" class="project__img">
-                </a>
-
-            </span>
-
-        </span>
-
-        <span class="project">
-
-            <span>
+            <span data-aos="fade-up" data-aos-duration="800">
                 <p class="project__name"><b>fatBatman - Discord Bot</b></p>
                 <br>
                 <p class="project__info">fatBatman is a friendly Discord bot developed with <b class="text">Discord.Js</b> and <b class="text">Express.Js</b>. The bot shares a cool and dank meme in the discord channel.</b></p>
@@ -193,7 +165,7 @@
                 <br>
 
                 <a href="https://parth-kabra.github.io/fatBatman-Discord-Bot/" target="_blank">
-                    <img src="static/img/fatBatman.png" class="project__img">
+                    <img src="{{ url_for('static', filename='img/fatBatman.png') }}" class="project__img">
                 </a>
 
             </span>
@@ -208,23 +180,25 @@
     
     <section class="experience" id = "experience">
 
-        <p class="experience__title">Experiences</p>
+        <span data-aos="fade-up" data-aos-duration="500">
+            <p class="experience__title">Experiences</p>
 
-        <div class="box box-down blue">
-            <span class="head">
-                <h2 class="tle">TLE Eliminators</h2>
-                <p class="time">(June 2022 - August 2022)</p>
-            </span>
-            <p class="exp">During my time at TLE Eliminators, I was a full stack web developer</p>
-            <br>
-            <img src="static/img/tle.png">
-        </div>
+            <div  class="box box-down blue">
+                <span class="head">
+                    <h2 class="tle">TLE Eliminators</h2>
+                    <p class="time">(June 2022 - August 2022)</p>
+                </span>
+                <p class="exp">During my time at TLE Eliminators, I was a full stack web developer</p>
+                <br>
+                <img src="{{ url_for('static', filename='img/tle.png') }}">
+            </div>
+        </span>
 
     </section>
 
-    <section class="hire" id = "hire">
+    <section data-aos="zoom-in" data-aos-duration="500" class="hire" id = "hire">
 
-        <img src="static/img/hire.svg" class="hire__img">
+        <img src="{{ url_for('static', filename='img/hire.svg') }}" class="hire__img">
 
         <span class="hire__info">
             <span>
@@ -241,7 +215,7 @@
                 <p class="hire__text">Our future lies ahead of us, let's build it together!</p>
 
                 <br>
-                <a class="button" href="templates/buy.html" target="_blank">Let's work together</a>
+                <a class="button" href="/freelance" target="_blank">Learn More</a>
 
             </span>
         </span>
@@ -274,7 +248,7 @@
                     <i class='bx bxl-github' ></i>
                 </a>
 
-                <a target = "_blank" class="fiverr" href = "https://www.fiverr.com/parthkabra_">
+                <a align='center' target = "_blank" class="fiverr" href = "https://www.fiverr.com/parthkabra_">
                     fiverr
                 </a>
         </span>
@@ -305,7 +279,15 @@
         </span>
 
     </header>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="{{ url_for('static', filename='css/aos.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+    <script>
+        $(document).ready(()=>{
+            AOS.init()
+        })
+    </script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 
 </body>
 </html>

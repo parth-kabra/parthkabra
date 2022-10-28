@@ -12,7 +12,7 @@
 
 :root {
     --white-color:#f5f5f5;
-    --dark-color:#141218;
+    --dark-color:#0A0A0A;
     --grayishBlue: hsl(229, 6%, 66%);
 }
 
@@ -102,8 +102,7 @@ img{
 }
 
 .text{
-	background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-	-webkit-background-clip: text;
+	background: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #0590c2 100.2%);	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -116,7 +115,7 @@ img{
 	top: 0;
 	height: var(--header-height);
 	left: 0;
-	background-color: #141218f9;
+	background-color: #0A0A0Af9;
 	display: flex;
 	border-bottom: 1px solid #80808014;
 	justify-content: space-between;
@@ -143,7 +142,7 @@ img{
 	bottom: 0;
 	border-radius: 10px;
 	left: 0;
-	background: #74fdd2;
+	background: #0590c2;
 	transform-origin: bottom right;
 	transition: transform 0.21s ease-out;
 }
@@ -165,7 +164,7 @@ img{
 }
 
 .bx-menu:hover{
-	color:#74fdd2;
+	color:#0590c2;
 }
 
 @media screen and (max-width: 780px) {
@@ -182,7 +181,7 @@ img{
 /*<===HOME===>*/
 
 .home{
-	margin-top: 8rem;
+	padding-top: 8rem;
 	display: flex;
 	justify-content: center;
 }
@@ -225,7 +224,7 @@ img{
 /*<===ABOUT===>*/
 
 .about{
-	margin-top: 10rem;
+	padding-top: 10rem;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -280,7 +279,7 @@ img{
     width: 100%;
     height: 48vh;
     align-items: center;
-    background-color: #1a112449;
+    background-color: #111111c9;
     flex-direction: column;
 }
 
@@ -354,7 +353,7 @@ img{
 /*<===PROJECTS===>*/
 
 .projects{
-	margin-top: 8rem;
+	padding-top: 8rem;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -394,16 +393,16 @@ img{
 }
 
 .bx-link-external:hover, .bx-code-alt:hover{
-	color: #74fdd2;
+	color: #0590c2;
 }
 
 .project__img{
 	margin-top: 2rem;
 	width: 80%;
 	height: auto;
-	box-shadow: 0px 0px 10px 0px rgba(116,253,210,0.75);
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(116,253,210,0.75);
-	-moz-box-shadow: 0px 0px 10px 0px rgba(116,253,210,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(5, 144, 194,0.75);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(5, 144, 194,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(5, 144, 194,0.75);
 	border-radius: 0.6em;
 	transition: 0.3s;
 }
@@ -425,7 +424,7 @@ img{
 }
 
 .view:hover{
-	text-shadow: 0px 2px 20px #74fdd2;	
+	text-shadow: 0px 2px 20px #0590c2;	
 
 }
 
@@ -434,7 +433,7 @@ img{
 .experience{
 	width: 100%;
 	padding-left: 5vw;
-	margin-top:6rem;
+	padding-top:6rem;
 }
 
 .experience__title{
@@ -456,10 +455,11 @@ img{
     border-radius: 5px;
 	padding: 2vw;
 	width: 30rem;
+	background-color: var(--dark-color);
 	height: auto;
-	box-shadow: 0px 28px 61px -23px rgba(84,158,242,0.5);
-	-webkit-box-shadow: 0px 28px 61px -23px rgba(84,158,242,0.5);
-	-moz-box-shadow: 0px 28px 61px -23px rgba(84,158,242,0.5);
+	box-shadow: 0px 28px 45px -23px rgba(84,158,242,0.5);
+	-webkit-box-shadow: 0px 28px 45px -23px rgba(84,158,242,0.5);
+	-moz-box-shadow: 0px 28px 45px -23px rgba(84,158,242,0.5);
 	margin-top: 2rem;
 	transition: 0.3s;
 }
@@ -468,9 +468,6 @@ img{
 	width: 100px;
 	height: auto;
 	border-radius:5px;
-	box-shadow: 0px 0px 42px 0px rgba(84,158,242,0.46);
-	-webkit-box-shadow: 0px 0px 42px 0px rgba(84,158,242,0.46);
-	-moz-box-shadow: 0px 0px 42px 0px rgba(84,158,242,0.46);
 }
 
 .box:hover{
@@ -491,6 +488,17 @@ img{
 	justify-content: flex-start;
 }
 
+@media screen and (max-width:500px){
+	.head{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.time{
+		padding-bottom: 1vw;
+		padding-left: 0vw !important;
+	}
+}
+
 .time{
 	padding-left: 1vw;
 	font-size: small;
@@ -505,7 +513,7 @@ img{
 /*<===HIRE===>*/
 
 .hire{
-	margin-top: 8rem;
+	padding-top: 8rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -531,7 +539,7 @@ img{
 .button{
 	cursor: pointer;
 	display: inline-block;
-	background: linear-gradient(to right, #00cb44 0%, #008e74 100%);
+	background: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #0590c2 100.2%);
 	color: var(--white-color);
 	padding: 0.8rem 1rem; 
 	padding-bottom: 0.5rem;
@@ -566,7 +574,7 @@ img{
 	top: 0;
 	backdrop-filter: blur(4px);
 	right: 0;
-	background-color: #141218f7;
+	background-color: #0A0A0Af7;
 	border-left:1px solid #80808014;
 	overflow-x: hidden;
 	transition: 0.5s;
@@ -599,7 +607,7 @@ img{
 }
 
 .closebtn:hover{
-	color:#74fdd2;
+	color:#0590c2;
 }
 
 /*<===BUY===>*/
@@ -627,3 +635,5 @@ img{
 		width: 75%;
 	}
 }
+
+/*<===WORK===>*/
