@@ -300,13 +300,7 @@ img{
     cursor: pointer;
 }
 
-.fiverr{
-	font-family: 'Roboto Slab', serif;
-	font-size: x-large;
-	transition: 0.2s;
-}
-
-.fiverr:hover{
+.bxl-upwork:hover{
 	color: #03e94f;
     text-shadow: rgba(	4, 231, 79, 0.779) 0 1px 30px;
 
