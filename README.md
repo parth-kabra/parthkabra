@@ -1,7 +1,9 @@
-<h3 align="center">Welcome to my personal portfolio 😎!</h3>
+<h1 align="center">
+<i>Welcome to my personal portfolio 😎!</i>
+</h1>
 <br>
-<p align="center">
-  <img alt="Light" src="Parth-Kabra.png" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="Parth-Kabra-about.png" width="45%">
-</p>
+<a href="https://parth-kabra.vercel.app/"><img alt="Light" src="Parth-Kabra.png"></a>
+<br>
+<br>
+<br>
+<a href="https://parth-kabra.vercel.app/"><img alt="Dark" src="Parth-Kabra-about.png"></a>
