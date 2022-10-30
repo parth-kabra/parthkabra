@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     <link href="{{ url_for('static', filename='css/boxicons.min.css') }}" rel='stylesheet'>
     <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet" />
+
 </head>
 <body >
     <div id="mySidebar" class="sidebar" >
@@ -17,7 +20,7 @@
             <a href="#about" class="nav__text" onclick="closeNav()">About</a>
             <a href="#projects" class="nav__text" onclick="closeNav()">Projects</a>
             <a href="#experience" class="nav__text" onclick="closeNav()">Experiences</a>
-            <a href="#hire" class="nav__text" onclick="closeNav()">Engage</a>
+            <a href="#hire" class="nav__text" onclick="closeNav()">Hire</a>
             <a href="#contact" class="nav__text" onclick="closeNav()">Contact</a>
         </span>
     </div>
@@ -188,10 +191,42 @@
                     <h2 class="tle">TLE Eliminators</h2>
                     <p class="time">(June 2022 - August 2022)</p>
                 </span>
-                <p class="exp">During my time at TLE Eliminators, I was a full stack web developer</p>
+                <p class="exp">During my time at TLE Eliminators, I was a Full-Stack Web Developer.</p>
                 <br>
                 <img src="{{ url_for('static', filename='img/tle.png') }}">
             </div>
+        </span>
+
+    </section>
+
+    <section style="padding-top: 7rem !important;" data-aos="fade-up" data-aos-duration="800" class="testimonials experience">
+
+        <p class="experience__title">On Working With Me</p>
+
+        <br>
+
+        <span class="testimonial">
+
+            <p class="testi__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta beatae unde neque in eligendi, ea repellat, optio obcaecati amet distinctio quos. Magnam amet repudiandae distinctio alias libero placeat quaerat eos.
+            </p>
+
+            <br>
+
+            <span class="testi">
+                <img class="testi__img" src="{{ url_for('static', filename='img/img.jpg') }}">
+
+                <span class="brand">
+
+                    <span>
+                        <h4 class="testi__name">A for apple</h4>
+                        <p class="testi__work">Alphabet of english</p>
+                    </span>
+
+                </span>
+
+            </span>
+
         </span>
 
     </section>
@@ -222,10 +257,38 @@
 
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         
-        <form class="contact" id="contact">
-        </form>
+        <span data-aos="fade-up" data-aos-duration="800" class="contact__main">
+            <p class="contact__title">Let's get in touch!</p>
+
+            <form class="form" onsubmit="return false">
+                
+                <span>
+                    <p class="input__name">Name</p>
+                    <input type="text" required name="name" id="name" class="name" placeholder="Enter your name">
+                </span>
+
+                <br>
+
+                <span>
+                    <p class="input__name">Email</p>
+                    <input type="email" required name="email" id="email" class="email" placeholder="Enter your email">
+                </span>
+
+                <br>
+
+                <span>
+                    <p class="input__name">Message</p>
+                    <textarea required name="msg" id="msg" class="msg" placeholder="Enter your message"></textarea>
+                </span>
+
+                <br>
+                <button class="contact__btn" role="button" type="submit">Submit</button>
+                
+
+            </form>
+        </span>
 
     </section>
 
@@ -265,6 +328,18 @@
     
     </footer>
 
+    <span class="side__icons">
+
+        <a target="_blank" href="https://www.linkedin.com/in/parth-kabra-3164a5205/">
+            <i class='bx bxl-linkedin' ></i>
+        </a>
+
+        <a target = "_blank" href = "https://www.upwork.com/freelancers/~01805dc65c28fae55b">
+            <i class='bx bxl-upwork'></i>
+        </a>
+
+    </span>
+
     <header class="header">
         
         <a href=""><h1 class="text" style="cursor: pointer">Parth</h1></a>
@@ -274,7 +349,7 @@
             <a href="#about" class="nav__link">About</a>
             <a href="#projects" class="nav__link">Projects</a>
             <a href="#experience" class="nav__link">Experiences</a>
-            <a href="#hire" class="nav__link">Engage</a>
+            <a href="#hire" class="nav__link">Hire</a>
             <a href="#contact" class="nav__link">Contact</a>
             
 

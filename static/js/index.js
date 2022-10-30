@@ -46,3 +46,21 @@ window.addEventListener("click", (event) => {
         }
     }
 })
+
+function f(s){
+    return $(s).val()
+}
+
+document.getElementById("contact").addEventListener("submit", ()=>{
+    $.ajax({
+        type:'POST',
+        url:'/',
+        data:{
+            name: f("#name"),
+            email: f("#email"),
+            msg: f("#msg")
+        },
+    })
+    $(".form")[0].reset()
+    swal("", "Thanks for submitting the form the form, I will get back to you shortly!", "../static/img/swal_ok.png")
+})
