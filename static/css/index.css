@@ -544,7 +544,7 @@ img{
 
 .hire__info{
 	padding-top: 3rem;
-	padding-left: 3rem;
+	padding-left: 4rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -582,7 +582,7 @@ img{
 		width: 100%;
 		padding-left: 4vw;
 	}
-	.hire{
+	.hire, .freelance{
 		flex-direction:column;
 	}
 }
@@ -631,32 +631,6 @@ img{
 
 .closebtn:hover{
 	color:#0590c2;
-}
-
-/*<===BUY===>*/
-.buy{
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.buy__title{
-	font-size: var(--about-title);
-	font-family: monospace;
-	text-shadow: 0px 2px 50px #6C63FF;	
-}
-
-.buy__img{
-	width: 30rem;
-}
-
-@media screen and (max-width:786px){
-	.buy__img{
-		width: 75%;
-	}
 }
 
 /*<===testimonial===>*/
@@ -850,4 +824,18 @@ input:focus, textarea:focus{
 
 .side_icons a .bxl-linkedin:hover{
 	text-shadow: none !important;
+}
+
+/*<===FREELANCE===>*/
+.freelance__img{
+	width: 25rem;
+}
+
+.freelance{
+	padding-top: 7rem;
+	display: flex;
+}
+
+.parth{
+	text-shadow: 0px 2px 25px #5558da;
 }

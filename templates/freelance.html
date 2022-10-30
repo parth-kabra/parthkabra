@@ -4,23 +4,113 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Parth Kabra</title>
+        <title>Parth Kabra | Freelance</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
         <link href="{{ url_for('static', filename='css/boxicons.min.css') }}" rel='stylesheet'>
         <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
     </head>
 <body>
     
-    <section class="buy">
-
-        <img src="{{ url_for('static', filename='img/coming soon.svg') }}" class="buy__img">
-
+    <div id="mySidebar" class="sidebar" >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <br>
-        <br>
+        <span class="options">
+            <a href="#about" class="nav__text" onclick="closeNav()">About</a>
+            <a href="#projects" class="nav__text" onclick="closeNav()">Projects</a>
+            <a href="#experience" class="nav__text" onclick="closeNav()">Experiences</a>
+            <a href="#hire" class="nav__text" onclick="closeNav()">Hire</a>
+            <a href="#contact" class="nav__text" onclick="closeNav()">Contact</a>
+        </span>
+    </div>
 
-        <h1 class="buy__title">Announcing soon</h1>
+
+    <section data-aos="fade-up" data-aos-duration="800" class="about" id = "about">
+        
+        <span class="about__info">
+
+            <p class="about__title">Hi, I'm <span class="text">Parth</span></p>
+
+            <br>
+
+            <p class="about__text">
+            
+                I started web design and development about 2 years ago and have enjoyed working as a freelance web developer for the past 6 months.
+                I specialize in full-stack web development. In my previous position at <b class="text">TLE Eliminators</b>, I was a web developer.
+            </p>
+
+        </span>
+
+        <span class="techs">
+            <img src="{{ url_for('static', filename='img/build.svg') }}" class="home__img">
+        </span>
 
     </section>
+
+    <section class="projects" style="padding-top: 10rem !important;">
+
+        <p class="about__title text">What can I do.</p>
+
+        <section data-aos="zoom-in" style="padding-top:3rem!important;" data-aos-duration="500" class="freelance" id = "hire">
+
+            <img src="{{ url_for('static', filename='img/design.svg') }}" class="freelance__img">
+            
+            <span class="hire__info">
+                <span>
+                    <p class="experience__title parth">Design what you want.</p>
+                    <br>
+                    <p class="hire__text">
+                        I like to keep it simple. It is my goal to make your website look good, convey your message effectively, and ensure that typography, content, and design are all taken into consideration
+                    </p>
+                </span>
+            </span>
+    
+        </section>
+
+        <br>
+        <br>
+
+        <section data-aos="zoom-in" style="padding-top:3rem!important; padding-left: 0rem !important; padding-right: 5rem !important;" data-aos-duration="500" class="freelance" id = "hire">
+
+            
+            <span class="hire__info">
+                <span>
+                    <p class="experience__title parth">Develop what you need.</p>
+                    <br>
+                    <p class="hire__text">
+                        As an experienced developer, I can create your website using the latest technologies to run across multiple devices.
+                    </p>
+                </span>
+            </span>
+            <img src="{{ url_for('static', filename='img/develop.svg') }}" class="freelance__img">
+
+    
+        </section>
+
+    </section>
+
+    <br>
+    <br>
+
+    <header class="header">
+        
+        <a href=""><h1 class="text" style="cursor: pointer">Parth</h1></a>
+
+        <span class="nav">
+            
+            <a href="#about" class="nav__link">About</a>
+            <a href="#projects" class="nav__link">Projects</a>
+            <a href="#experience" class="nav__link">Experiences</a>
+            <a href="#hire" class="nav__link">Hire</a>
+            <a href="#contact" class="nav__link">Contact</a>
+            
+
+        </span>
+
+        <span class="menu">
+            <i class='bx bx-menu' onclick="openNav()"></i>
+        </span>
+
+    </header>
 
 </body>
 </html>
