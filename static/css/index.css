@@ -582,8 +582,17 @@ img{
 		width: 100%;
 		padding-left: 4vw;
 	}
-	.hire, .freelance{
+	.freelance__info{
+		padding-left: 4vw;
+	}
+	.hire{
 		flex-direction:column;
+	}
+}
+
+@media screen and (max-width:970px) {
+	.freelance__img{
+		width: 80%;
 	}
 }
 
@@ -827,15 +836,18 @@ input:focus, textarea:focus{
 }
 
 /*<===FREELANCE===>*/
-.freelance__img{
-	width: 25rem;
-}
-
-.freelance{
-	padding-top: 7rem;
-	display: flex;
-}
-
 .parth{
 	text-shadow: 0px 2px 25px #5558da;
+}
+
+.freelance__img{
+	width: 20rem;
+}
+
+.freelance__info{
+	padding-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 40rem;
 }
