@@ -24,7 +24,7 @@
     </div>
 
 
-    <section data-aos="fade-up" data-aos-duration="800" class="about" id = "about">
+    <section data-aos="zoom-in" class="about" id = "about">
         
         <span class="about__info">
 
@@ -48,48 +48,93 @@
 
     <section class="projects" style="padding-top: 10rem !important;">
 
-        <p class="about__title text">What can I do.</p>
+        <p class="about__title text">What can I do.</p>      
+        
+        <br>
+        <br>
 
-        <section data-aos="zoom-in" style="padding-top:3rem!important;" data-aos-duration="500" class="freelance" id = "hire">
+        <span data-aos="fade-up" data-aos-duration="800" style="padding-top: 0rem;" class="hire" id = "hire">
 
             <img src="{{ url_for('static', filename='img/design.svg') }}" class="freelance__img">
-            
+    
             <span class="hire__info">
                 <span>
                     <p class="experience__title parth">Design what you want.</p>
                     <br>
                     <p class="hire__text">
-                        I like to keep it simple. It is my goal to make your website look good, convey your message effectively, and ensure that typography, content, and design are all taken into consideration
+                        I like to keep it <b class="text">simple</b>. It is my goal to make your website look good, convey your message effectively, and ensure that <b class="text">typography</b>, <b class="text">content</b>, and <b class="text">design</b> are all taken into consideration
                     </p>
                 </span>
             </span>
     
-        </section>
+        </span>
 
-        <br>
-        <br>
+        <span data-aos="fade-up" data-aos-duration="800" style="padding-top: 8rem;" class="hire" id = "hire">
 
-        <section data-aos="zoom-in" style="padding-top:3rem!important; padding-left: 0rem !important; padding-right: 5rem !important;" data-aos-duration="500" class="freelance" id = "hire">
-
-            
+            <img src="{{ url_for('static', filename='img/develop.svg') }}" class="freelance__img">
+    
             <span class="hire__info">
                 <span>
                     <p class="experience__title parth">Develop what you need.</p>
                     <br>
                     <p class="hire__text">
-                        As an experienced developer, I can create your website using the latest technologies to run across multiple devices.
+                        As an experienced developer, I can create your website using the <b class="text">latest technologies</b> to run across multiple devices.
                     </p>
                 </span>
             </span>
-            <img src="{{ url_for('static', filename='img/develop.svg') }}" class="freelance__img">
-
     
-        </section>
+        </span>
 
     </section>
 
+    <section style="padding-top: 10rem !important;" data-aos="fade-up" data-aos-duration="800" class="testimonials experience">
+
+        <p class="experience__title">On Working With Me</p>
+
+        <br>
+
+        <span class="testimonial">
+
+            <p class="testi__text">
+                Parth Kabra is an amazing Web Developer, as proven by his work at TLE Eliminators. He helped us build an idea for our website to showcase the resources in a compelling way, coupled with Google Authentication. We would highly recommend his work for anything concerning web development.
+            </p>
+
+            <br>
+
+            <span class="testi">
+                <img class="testi__img" src="{{ url_for('static', filename='img/tle_eliminators.jpg') }}">
+
+                <span class="brand">
+
+                    <span>
+                        <h4 class="testi__name">Priyansh Agarwal</h4>
+                        <p class="testi__work">Founder of TLE Eliminators</p>
+                    </span>
+
+                </span>
+
+            </span>
+
+        </span>
+
+    </section>
+
+
     <br>
     <br>
+
+    <span class="side__icons">
+
+        <a target="_blank" href="https://www.linkedin.com/in/parth-kabra-3164a5205/">
+            <i class='bx bxl-linkedin' ></i>
+        </a>
+
+        <a target = "_blank" href = "https://www.upwork.com/freelancers/~01805dc65c28fae55b">
+            <i class='bx bxl-upwork'></i>
+        </a>
+
+    </span>
+
 
     <header class="header">
         
@@ -111,6 +156,16 @@
         </span>
 
     </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="{{ url_for('static', filename='css/aos.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+    <script>
+        $(document).ready(()=>{
+            AOS.init()
+        })
+    </script>
+
 
 </body>
 </html>
