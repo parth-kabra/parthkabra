@@ -505,6 +505,7 @@ img{
 	font-size: medium;
 }
 
+
 .head{
 	display:flex;
 	align-items: center;
@@ -599,14 +600,15 @@ img{
 /*<===SIDEBAR===>*/
 
 .sidebar {
-	height: 100%;
+	margin-top: var(--header-height);
+	height: calc(100vh - var(--header-height));
 	width: 0;
 	position: fixed;
 	z-index: 1;
 	top: 0;
 	backdrop-filter: blur(4px);
 	right: 0;
-	background-color: #0A0A0Af7;
+	background-color: #0e0e0e;
 	border-left:1px solid #80808014;
 	overflow-x: hidden;
 	transition: 0.5s;
@@ -621,13 +623,11 @@ img{
 	position: absolute;
 	top: 0;
 	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
+	font-size: 2rem;
 }
 
 .nav__text{
-	border-bottom: 1px solid #80808014;
-	margin-bottom: 3rem !important;
+	margin-bottom: 1rem !important;
 	padding-left: 1vw;
 	display: flex;
 	font-size: x-large;
