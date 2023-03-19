@@ -16,13 +16,22 @@
     
     <div id="mySidebar" class="sidebar" >
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <br>
         <span class="options">
-            <a href="#about" class="nav__text" onclick="closeNav()">About</a>
-            <a href="#projects" class="nav__text" onclick="closeNav()">Projects</a>
-            <a href="#experience" class="nav__text" onclick="closeNav()">Experiences</a>
-            <a href="#hire" class="nav__text" onclick="closeNav()">Hire</a>
-            <a href="#contact" class="nav__text" onclick="closeNav()">Contact</a>
+            <a href="#about" class="nav__text" onclick="closeNav()">
+                <span class="nav__link">About</span>
+            </a>
+            <a href="#projects" class="nav__text" onclick="closeNav()">
+                <span class="nav__link">Projects</span>
+            </a>
+            <a href="#experience" class="nav__text" onclick="closeNav()">
+                <span class="nav__link">Experiences</span>
+            </a>
+            <a href="#hire" class="nav__text" onclick="closeNav()">
+                <span class="nav__link">Hire</span>
+            </a>
+            <a href="#contact" class="nav__text" onclick="closeNav()">
+                <span class="nav__link">Contact</span>
+            </a>
         </span>
     </div>
 
@@ -53,8 +62,8 @@
 
             <p class="about__text">
             
-                Hi, I'm Parth Kabra,<br>I started web design and development about 2 years ago and have enjoyed working as a freelance web developer for the past 6 months.
-                I specialize in full-stack web development. In my previous position at <b class="text">TLE Eliminators</b>, I was a web developer.
+                Hi, I'm Parth Kabra,<br>I started web design and development about 2 years ago and have enjoyed working as a freelance web developer for the past 1 year.
+                I specialize in full-stack web development. In my previous position at <b class="text">Senior</b>, I was a web developer.
             </p>
 
             <br>
@@ -64,15 +73,20 @@
 
         <span class="techs">
             <span>
-                <p class="tech">html</p>
-                <p class="tech">css</p>
-                <p class="tech">bootstrap</p>
-                <p class="tech">javascript</p>
+                <p class="tech">html 5</p>
+                <p class="tech">css 3</p>
+                <p class="tech">bootstrap v5</p>
+                <p class="tech">javascript ES6/ESM</p>
                 <p class="tech">python 3</p>
                 <p class="tech">c++</p>
+                <p class="tech">react js</p>
                 <p class="tech">git</p>
+                <p class="tech">node js</p>
                 <p class="tech">github</p>
                 <p class="tech">firebase</p>
+                <p class="tech">vercel</p>
+                <p class="tech">ui/ux</p>
+                <p class="tech">database</p>
                 <p class="tech">flask</p>
                 <p class="tech">figma</p>
                 <p class="tech">web development</p>
@@ -149,18 +163,18 @@
         <span class="project">
 
             <span data-aos="fade-up" data-aos-duration="800">
-                <p class="project__name"><b>fatBatman - Discord Bot</b></p>
+                <p class="project__name"><b>Meme Raja - Discord Bot</b></p>
                 <br>
-                <p class="project__info">fatBatman is a friendly Discord bot developed with <b class="text">Discord.Js</b> and <b class="text">Express.Js</b>. The bot shares a cool and dank meme in the discord channel.</b></p>
+                <p class="project__info">Meme Raja is a friendly Discord bot developed with <b class="text">Discord.Js</b> and <b class="text">Express.Js</b>. The bot shares a cool and dank meme in the discord channel.</b></p>
                 <br>
 
                 <span class="links">
                     
-                    <a href="https://parth-kabra.github.io/fatBatman-Discord-Bot/" target="_blank">
+                    <a href=https://parth-kabra.github.io/Meme-Raja/" target="_blank">
                         <i class='bx bx-link-external'></i>
                     </a>
 
-                    <a href="https://github.com/parth-kabra/fatBatman-Discord-Bot" target="_blank">
+                    <a href="https://github.com/parth-kabra/Meme-Raja" target="_blank">
                         <i class='bx bx-code-alt'></i>
                     </a>
 
@@ -169,7 +183,7 @@
                 <br>
 
                 <a href="https://parth-kabra.github.io/fatBatman-Discord-Bot/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/fatBatman.png') }}" class="project__img">
+                    <img src="{{ url_for('static', filename='img/memeraja.PNG') }}" class="project__img">
                 </a>
 
             </span>
@@ -189,12 +203,21 @@
 
             <div  class="box box-down blue">
                 <span class="head">
-                    <h2 class="tle">TLE Eliminators</h2>
-                    <p class="time">(June 2022 - August 2022)</p>
+                    <h2 class="tle">Senior</h2>
+                    <p class="time">(February 2023 - current)</p>
                 </span>
-                <p class="exp">During my time at TLE Eliminators, I was a Full-Stack Web Developer.</p>
+                <p class="exp">
+                    During my time at Senior, I was a Full-Stack Freelance web developer where I worked on:
+                    <ul style="color:var(--grayishBlue)">
+                        <li>UI/UX</li>
+                        <li>User Authentication</li>
+                        <li>Database Management</li>
+                        <li>Payment Gateway</li>
+                        <li>Discord Integration in website</li>
+                    </ul>
+                </p>
                 <br>
-                <img src="{{ url_for('static', filename='img/tle.png') }}">
+                <img src="{{ url_for('static', filename='img/senior.png') }}">
             </div>
         </span>
 
@@ -202,7 +225,7 @@
 
     <section style="padding-top: 7rem !important;" data-aos="fade-up" data-aos-duration="800" class="testimonials experience">
 
-        <p class="experience__title">On Working With Me</p>
+        <p class="experience__title">What people think about my work?</p>
 
         <br>
 
