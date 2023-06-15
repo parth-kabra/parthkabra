@@ -102,7 +102,7 @@ img{
 }
 
 .text{
-	background: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #0590c2 100.2%);
+background: linear-gradient(-225deg, #FF3CAC 0%, #8a49c3 52%, #379ae0 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -114,14 +114,14 @@ img{
 .swal-button{
 	transition: .5s;
 	outline: none;
-	background: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #0590c2 100.2%);
-	border: 1px solid #0590c2;
+	background: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #FF3CAC 100.2%);
+	border: 1px solid #FF3CAC;
 }
 
 .swal-button:not([disable]):hover{
-	background: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #0590c2 100.2%);
+	background: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #FF3CAC 100.2%);
 	background-color: transparent;
-	border: 1px solid #0590c2;
+	border: 1px solid #FF3CAC;
 }
 
 .swal-text{
@@ -165,7 +165,7 @@ img{
 	bottom: 0;
 	border-radius: 10px;
 	left: 0;
-	background: #0590c2;
+	background: #FF3CAC;
 	transform-origin: bottom right;
 	transition: transform 0.21s ease-out;
 }
@@ -187,7 +187,7 @@ img{
 }
 
 .bx-menu:hover{
-	color:#0590c2;
+	color:#FF3CAC;
 }
 
 @media screen and (max-width: 780px) {
@@ -416,7 +416,7 @@ img{
 }
 
 .bx-link-external:hover, .bx-code-alt:hover{
-	color: #0590c2;
+	color: #FF3CAC;
 }
 
 .project__img{
@@ -447,7 +447,7 @@ img{
 }
 
 .view:hover{
-	text-shadow: 0px 2px 20px #0590c2;	
+	text-shadow: 0px 2px 20px #FF3CAC;	
 
 }
 
@@ -498,7 +498,7 @@ img{
 }
 
 .blue {
-    border-top: 3px solid #549ef2;
+    border-top: 3px solid #FF3CAC;
 }
 
 .exp{
@@ -563,7 +563,7 @@ img{
 .button{
 	cursor: pointer;
 	display: inline-block;
-	background: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #0590c2 100.2%);
+	background: linear-gradient(-225deg, #FF3CAC 0%, #8a49c3 52%, #379ae0 100%);
 	color: var(--white-color);
 	padding: 0.8rem 1rem; 
 	padding-bottom: 0.5rem;
@@ -639,7 +639,7 @@ img{
 }
 
 .closebtn:hover{
-	color:#0590c2;
+	color:#FF3CAC;
 }
 
 /*<===testimonial===>*/
@@ -756,8 +756,8 @@ textarea{
 }
 
 input:focus, textarea:focus{
-	outline: 1px solid rgb(5, 144, 194);
-	box-shadow: 0px 0px 12px 0px rgba(5, 144, 194,0.75);
+	outline: 1px solid rgb(255, 60, 172);
+	box-shadow: 0px 0px 12px 0px rgba(255, 60, 172,0.75);
 	-webkit-box-shadow: 0px 0px 12px 0px rgba(5, 144, 194,0.75);
 	-moz-box-shadow: 0px 0px 12px 0px rgba(5, 144, 194,0.75);
 }
@@ -837,7 +837,7 @@ input:focus, textarea:focus{
 
 /*<===FREELANCE===>*/
 .parth{
-	text-shadow: 0px 2px 25px #5558da;
+	text-shadow: 0px 2px 25px #FF3CAC;
 }
 
 .freelance__img{
@@ -942,7 +942,7 @@ input:focus, textarea:focus{
 
 .plan__btn{
 	width: 80%;
-	background: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #0590c2 100.2%);
+	background: radial-gradient(circle at 12.3% 19.3%, #5558da 0%, #FF3CAC 100.2%);
 	padding: 10px;
 	border: none;
 }
@@ -953,7 +953,7 @@ input:focus, textarea:focus{
 }
 
 .standard{
-	border-top: 5px solid #0590c2;
+	border-top: 5px solid #FF3CAC;
 }
 
 .premium{
